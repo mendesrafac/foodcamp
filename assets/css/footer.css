@@ -1,0 +1,27 @@
+footer {
+    background-color: white;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+footer > button {
+    width: 90%;
+    border-radius: 30px;
+    background-color: #cbcbcb;
+    padding: 5px;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+button p {
+    width: 200px;
+    font-size: 1.2em
+}
