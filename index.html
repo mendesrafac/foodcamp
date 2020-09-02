@@ -16,11 +16,80 @@
     <title>FoodCamp</title>
 </head>
 <body>
-    <header data-include="header"></header>
-    <main data-include="main"></main>
-    <footer data-include="footer"></footer>
-    <script src="jquery.js"></script>
-    <script src="include.js"></script>
+    <header data-include="header">
+        <h1>FoodCamp</h1>
+        <p>Sua comida em 6 minutos</p>
+    </header>
+    <main data-include="main">
+        <h2>Primeiro, seu prato</h2>
+        <section class="disable-scrollbars">
+            <article class="food">
+                <img src="./assets/images/ttopokki.jpg" alt="">
+                <h3 class="name" >Tteokbokki (P)</h3>
+                <p class="description">Massa de arroz com Gochujang (picante)</p>
+                <h4 class="price">R$ 23,90</h4>
+            </article>
+            <article class="food">
+                <img src="./assets/images/ttopokki.jpg" alt="">
+                <h3 class="name">Tteokbokki (M)</h3>
+                <p class="description">Massa de arroz com Gochujang (picante)</p>
+                <h4 class="price">R$ 28,90</h4>
+            </article>
+            <article class="food">
+                <img src="./assets/images/ttopokki.jpg" alt="">
+                <h3 class="name">Tteokbokki (G)</h3>
+                <p class="description">Massa de arroz com Gochujang (picante)</p>
+                <h4 class="price">R$ 34,90</h4>
+            </article>
+        </section>
+        <h2>Agora, sua bebida</h2>
+        <section class="disable-scrollbars">
+            <article class="drink">
+                <img src="./assets/images/soju.jpg" alt="">
+                <h3 class="name">Soju (P)</h3>
+                <p class="description">300ml</p>
+                <h4 class="price">R$ 8,90</h4>
+            </article>
+            <article class="drink">
+                <img src="./assets/images/soju.jpg" alt="">
+                <h3 class="name">Soju (M)</h3>
+                <p class="description">500ml</p>
+                <h4 class="price">R$ 11,90</h4>
+            </article>
+            <article class="drink">
+                <img src="./assets/images/soju.jpg" alt="">
+                <h3 class="name">Soju (G)</h3>
+                <p class="description">700ml</p>
+                <h4 class="price">R$ 14,90</h4>
+            </article>
+        </section>
+        <h2>Por fim, sua sobremesa</h2>
+        <section  class="disable-scrollbars">
+            <article class="dessert">
+                <img src="./assets/images/samanco.jpg" alt="">
+                <h3 class="name">Samanco</h3>
+                <p class="description">Chocolate</p>
+                <h4 class="price">R$ 8,90</h4>
+            </article>
+            <article class="dessert">
+                <img src="./assets/images/samanco.jpg" alt="">
+                <h3 class="name">Samanco</h3>
+                <p class="description">Cookies & Cream</p>
+                <h4 class="price">R$ 9,90</h4>
+            </article>
+            <article class="dessert">
+                <img src="./assets/images/samanco.jpg" alt="">
+                <h3 class="name">Samanco</h3>
+                <p class="description">Red Bean</p>
+                <h4 class="price">R$ 11,90</h4>
+            </article>
+        </section>
+    </main>
+    <footer data-include="footer">
+        <button class="checkout" disabled>
+            <p>Selecione os 3 itens para fazer o pedido</p>
+        </button>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

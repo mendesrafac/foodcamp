@@ -1,10 +1,21 @@
-var elements = Array.from( document.querySelectorAll("article.food"));
+/* Select one option among each class choice on click,
+setting border on it, deactivating the rest that belongs 
+to the same class */
 
-elements.forEach( function(ele){
-   ele.addEventListener( "click", function(){
-      elements.forEach( function( ele ){
-         ele.classList.remove("selected");
+var foodElements = Array.from(document.querySelectorAll("article.food"));
+var drinkElements = Array.from(document.querySelectorAll("article.drink"));
+var dessertElements = Array.from(document.querySelectorAll("article.dessert"));
+
+function applySelectedBorder (elements) {
+   elements.forEach(function(element){
+      element.addEventListener("click", function(){
+         elements.forEach(function(element){
+            element.classList.remove("selected");});
+         element.classList.add("selected");
       });
-      ele.classList.add("selected");
    });
-});
+}
+
+applySelectedBorder(foodElements);
+applySelectedBorder(drinkElements);
+applySelectedBorder(dessertElements);
