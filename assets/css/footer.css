@@ -20,6 +20,13 @@ footer > button {
     border: none;
     display: flex;
     justify-content: center;
+    transition: all .2s ease;
+}
+footer > button:enabled {
+    background-color: #32B72F;
+}
+button:focus {
+    outline-style: none;
 }
 button p {
     width: 200px;
