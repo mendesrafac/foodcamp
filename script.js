@@ -78,3 +78,4 @@ function orderCheckout () {
    document.querySelector("a").setAttribute("href", wppLink);
 }
 
+/* starting bonus requirements */
