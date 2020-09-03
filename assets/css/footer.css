@@ -11,8 +11,14 @@ footer {
     place-items: center;
     justify-content: center;
 }
-footer > button {
+
+footer a {
     width: 90%;
+    text-decoration: none;
+}
+
+footer button {
+    width: 100%;
     border-radius: 30px;
     background-color: #cbcbcb;
     padding: 5px;
@@ -22,7 +28,7 @@ footer > button {
     justify-content: center;
     transition: all .2s ease;
 }
-footer > button:enabled {
+footer button:enabled {
     background-color: #32B72F;
 }
 button:focus {
