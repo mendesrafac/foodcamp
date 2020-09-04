@@ -12,13 +12,8 @@ footer {
     justify-content: center;
 }
 
-footer a {
-    width: 90%;
-    text-decoration: none;
-}
-
 footer button {
-    width: 100%;
+    width: 90%;
     border-radius: 30px;
     background-color: #cbcbcb;
     padding: 5px;

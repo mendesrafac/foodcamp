@@ -1,0 +1,79 @@
+.modal-background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255, 0.5);
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+
+}
+.background-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    background-color: #32B72F;
+    border-radius: 10px;
+    width: 90%;
+    height: 60%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space-between;
+}
+.modal h3, .modal h4 {
+    color: white;
+}
+
+.modal li:not(:last-child) h4 {
+    font-weight: lighter;
+}
+
+.modal ul {
+    width: 90%;
+}
+.modal li {
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+}
+
+.modal .buttons {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.modal a {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    text-decoration: none;
+}
+.modal .confirm {
+    width: 100%;
+    border-radius: 30px;
+    background-color: white;
+    padding: 10px;
+    color: #32B72F;
+    font-weight: bolder;
+    border: none;
+    display: flex;
+    justify-content: center;
+    transition: all .2s ease;
+}
+.modal .cancel {
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    margin: 5px 0;
+    border: none;
+}
