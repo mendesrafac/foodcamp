@@ -25,6 +25,8 @@ footer button {
 }
 footer button:enabled {
     background-color: #32B72F;
+    height: 54px;
+    place-items: center;
 }
 button:focus {
     outline-style: none;
