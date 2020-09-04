@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">   
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">   
 
     
     
@@ -16,11 +17,111 @@
     <title>FoodCamp</title>
 </head>
 <body>
-    <header data-include="header"></header>
-    <main data-include="main"></main>
-    <footer data-include="footer"></footer>
-    <script src="jquery.js"></script>
-    <script src="include.js"></script>
-    <script src="script.js"></script>
+    <header data-include="header">
+        <h1>FoodCamp</h1>
+        <p>Sua comida em 6 minutos</p>
+    </header>
+    <main data-include="main">
+        <h2>Primeiro, seu prato</h2>
+        <section class="disable-scrollbars">
+            <article class="food">
+                <img src="./assets/images/ttopokki.jpg" alt="">
+                <h3 class="name" >Tteokbokki (P)</h3>
+                <p class="description">Massa de arroz com Gochujang (picante)</p>
+                <h4 class="price">R$ 23.90</h4>
+            </article>
+            <article class="food">
+                <img src="./assets/images/ttopokki.jpg" alt="">
+                <h3 class="name">Tteokbokki (M)</h3>
+                <p class="description">Massa de arroz com Gochujang (picante)</p>
+                <h4 class="price">R$ 28.90</h4>
+            </article>
+            <article class="food">
+                <img src="./assets/images/ttopokki.jpg" alt="">
+                <h3 class="name">Tteokbokki (G)</h3>
+                <p class="description">Massa de arroz com Gochujang (picante)</p>
+                <h4 class="price">R$ 34.90</h4>
+            </article>
+        </section>
+        <h2>Agora, sua bebida</h2>
+        <section class="disable-scrollbars">
+            <article class="drink">
+                <img src="./assets/images/soju.jpg" alt="">
+                <h3 class="name">Soju (P)</h3>
+                <p class="description">300ml</p>
+                <h4 class="price">R$ 8.90</h4>
+            </article>
+            <article class="drink">
+                <img src="./assets/images/soju.jpg" alt="">
+                <h3 class="name">Soju (M)</h3>
+                <p class="description">500ml</p>
+                <h4 class="price">R$ 11.90</h4>
+            </article>
+            <article class="drink">
+                <img src="./assets/images/soju.jpg" alt="">
+                <h3 class="name">Soju (G)</h3>
+                <p class="description">700ml</p>
+                <h4 class="price">R$ 14.90</h4>
+            </article>
+        </section>
+        <h2>Por fim, sua sobremesa</h2>
+        <section  class="disable-scrollbars">
+            <article class="dessert">
+                <img src="./assets/images/samanco.jpg" alt="">
+                <h3 class="name">Samanco</h3>
+                <p class="description">Chocolate</p>
+                <h4 class="price">R$ 8.90</h4>
+            </article>
+            <article class="dessert">
+                <img src="./assets/images/samanco.jpg" alt="">
+                <h3 class="name">Samanco</h3>
+                <p class="description">Cookies & Cream</p>
+                <h4 class="price">R$ 9.90</h4>
+            </article>
+            <article class="dessert">
+                <img src="./assets/images/samanco.jpg" alt="">
+                <h3 class="name">Samanco</h3>
+                <p class="description">Red Bean</p>
+                <h4 class="price">R$ 11.90</h4>
+            </article>
+        </section>
+    </main>
+    <footer data-include="footer">
+        <button class="checkout" disabled>
+            <p>Selecione os 3 itens para fazer o pedido</p>
+        </button>
+    </footer>
+    <div class="modal-background">
+        <div class="modal">
+            <h3>Confirme seu pedido</h3>
+            <ul>
+                <li class="food">
+                    <h4 class="name"></h4>
+                    <h4 class="price"></h4>
+                </li>
+                <li class="drink">
+                    <h4 class="name"></h4>
+                    <h4 class="price"></h4>
+                </li>
+                <li class="dessert">
+                    <h4 class="name"></h4>
+                    <h4 class="price"></h4>
+                </li>
+                <li class="total">
+                    <h4>TOTAL</h4>
+                    <h4 class="price"></h4>
+                </li>
+            </ul>
+            <div class="buttons">
+                <a><button class="confirm">Tudo certo, pode pedir!</button></a>
+                <button class="cancel">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/itemsSelection.js"></script>
+    <script src="./assets/js/orderCheckout.js"></script>
+    <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/script.js"></script>
+    
 </body>
 </html>

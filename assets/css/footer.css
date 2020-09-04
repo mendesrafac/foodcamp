@@ -11,7 +11,8 @@ footer {
     place-items: center;
     justify-content: center;
 }
-footer > button {
+
+footer button {
     width: 90%;
     border-radius: 30px;
     background-color: #cbcbcb;
@@ -20,6 +21,13 @@ footer > button {
     border: none;
     display: flex;
     justify-content: center;
+    transition: all .2s ease;
+}
+footer button:enabled {
+    background-color: #32B72F;
+}
+button:focus {
+    outline-style: none;
 }
 button p {
     width: 200px;
